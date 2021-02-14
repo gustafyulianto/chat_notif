@@ -96,13 +96,15 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: (pageInitialised)
-          ? Center(
-              child: RaisedButton(
-                color: Colors.blue,
-                textColor: Colors.black45,
-                padding: const EdgeInsets.all(0.0),
-                child: Container(child: Text('Sign in To Chat')),
-                onPressed: handleSignIn,
+          ? Container(
+              child: Center(
+                child: RaisedButton(
+                  color: Colors.blue,
+                  textColor: Colors.black45,
+                  padding: const EdgeInsets.all(0.0),
+                  child: Container(child: Text('Sign in To Chat')),
+                  onPressed: handleSignIn,
+                ),
               ),
             )
           : Center(
